@@ -76,7 +76,7 @@ The data used in the analysis underwent extensive data cleaning procedures. To g
    
      ● Added a new column:
   	
-      A new column titled “Membership Status” was created to assess member retention, based on the most recent visit of each member compared to the analysis cut-off date of 31st August        2025. Members who had not visited the gym within the last 60 days before the cut-off date of 31st August. In 2025, they were classified as “Inactive”, while those who had visited        within that period were classified as “Active”. This provides a clear view of how many members are at risk of leaving the gym. This is crucial in designing retention strategies          aimed at converting inactive members back into active users.
+      A new column titled “Membership Status” was created to assess member retention, based on the most recent visit of each member compared to the analysis cut-off date of 30th July,        2025. Members who had not visited the gym within the last 30 days before the cut-off date of 30th July, 2025. They were classified as “Inactive”, while those who had visited        within that period were classified as “Active”. This provides a clear view of how many members are at risk of leaving the gym. This is crucial in designing retention strategies          aimed at converting inactive members back into active users.
 
       Through these steps, the dataset was transformed from raw, inconsistent records into a reliable and structured dataset, ready for analysis and dashboard visualization. This              process not only improved data quality but also ensured that insights generated from the dashboard are credible and actionable.
 
