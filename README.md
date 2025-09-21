@@ -117,7 +117,7 @@ Dynamic visuals, including column charts, donut charts, and comparative bar char
      <img src="https://github.com/Rikky101/MyGym-Fitness-Analysis/blob/main/Price%20Analysis.PNG" 
         </p>
       
-   Discounts have a clear effect on revenue. The None category shows that sales without any discounts generated the highest final revenue at $33,013. the Student discount has the           most significant impact, giving the largest total discount ($2,125) and resulting in the lowest final price. In contrast, the Promo discount has the smallest effect, with the            lowest total discount ($673). The Loyalty discount has a moderate impact. 
+   Discounts have a clear effect on revenue. The None category shows that sales without any discounts generated the highest final revenue at $33,013. The student discount has the           most significant impact, giving the largest total discount ($3,526) and resulting in the lowest final price. In contrast, the Promo discount has the smallest effect, with the            lowest total discount ($2,101). The Loyalty discount has a moderate impact. 
       The business could explore whether a slightly smaller student discount would still attract the same number of customers, thereby increasing final revenue. Another option is              exploring ways to shift students toward the more profitable Promo or Loyalty options.
 
 5.	Do certain access types (off-peak, all hours, priority) impact visit frequency?
