@@ -37,9 +37,9 @@ The interactive analytics dashboard is intended to serve a variety of stakeholde
 ●	Communication of data-driven insights
 
 ## Data Source:
-The dataset used for this project was obtained from an online open-source repository for practice purposes. It contains historical membership records from MyGym, covering a diverse range of attributes related to customer demographics, subscription types, and engagement behaviors.
+The dataset used for this project was obtained from an online open-source repository ([Dataset](https://github.com/Rikky101/MyGym-Fitness-Analysis/blob/main/Fitness_Membership_Analytics_Dataset.csv))  for practice purposes. It contains historical membership records from MyGym, covering a diverse range of attributes related to customer demographics, subscription types, and engagement behaviors.
 Key variables include member age, membership type (Standard, Premium, etc.), visitation frequency (visits per week, days per week), participation in group lessons, check-in and check-out times, and duration spent in the gym. It also captures additional services such as drink subscriptions, personal training usage, and multi-location access, as well as financial details like discounts applied. Location-based fields (home gym, latitude, longitude) provide geographical context, while timestamps such as join date and last visit date enable retention and churn analysis. 
-In total, the dataset comprises 2,001 rows and 26 columns, offering a comprehensive foundation to analyze membership behavior, engagement trends, and operational performance across MyGym facilities. (Insert link)
+In total, the dataset comprises 2,001 rows and 26 columns, offering a comprehensive foundation to analyze membership behavior, engagement trends, and operational performance across MyGym facilities. 
 
 ## Data Cleaning and Processing: 
 The data used in the analysis underwent extensive data cleaning procedures. To guarantee high data accuracy and integrity and to improve the high quality of the dataset, the following steps were carried out:
@@ -78,7 +78,7 @@ The data used in the analysis underwent extensive data cleaning procedures. To g
   	
       A new column titled “Membership Status” was created to assess member retention, based on the most recent visit of each member compared to the analysis cut-off date of 31st August        2025. Members who had not visited the gym within the last 60 days before the cut-off date of 31st August. In 2025, they were classified as “Inactive”, while those who had visited        within that period were classified as “Active”. This provides a clear view of how many members are at risk of leaving the gym. This is crucial in designing retention strategies          aimed at converting inactive members back into active users.
 
-      Another column titled “Discount Price” was created to evaluate the impact of promotional offers and member benefits. This column measures the monetary value of discounts applied         to      memberships by calculating the difference between the Adjusted Price (the original or standard price) and the Final Price (the price actually paid by the member after            discounts).        This calculation highlights the extent of discounts given across membership types and provides insights into how promotional strategies affect both customer           acquisition and overall      revenue. 
+      Another column titled “Discount Price” was created to evaluate the impact of promotional offers and member benefits. This column measures the monetary value of discounts applied         to      memberships by calculating the difference between the Adjusted Price (the original or standard price) and the Final Price (the price actually paid by the member after            discounts). This calculation highlights the extent of discounts given across membership types and provides insights into how promotional strategies affect both customer                  acquisition and overall      revenue. 
 
       Through these steps, the dataset was transformed from raw, inconsistent records into a reliable and structured dataset, ready for analysis and dashboard visualization. This              process      not only improved data quality but also ensured that insights generated from the dashboard are credible and actionable.
 
@@ -87,42 +87,48 @@ Dynamic visuals, including column charts, donut charts, and comparative bar char
 
 1.	Which membership types are linked to the highest revenue?
     The question refers to the identification of which membership type is the most valuable to MyGym, because members spend more (revenue).
-    <p align="center">
-    ![Revenue by Membership Typ](https://github.com/Rikky101/MyGym-Fitness-Analysis/blob/main/Revenue%20by%20Membership%20Type.PNG) 
-
-    The chart shows that Premium memberships are the major source of revenue, followed by Standard. Together, these two account for over 70% of MyGym’s income, highlighting their            central importance, followed by Elite and Basic. The analysis suggests that Premium and Standard plans should remain the strategic focus, while Elite and Basic may require re-           evaluation to increase their impact.
+<p align="center">
+  <img src="https://github.com/Rikky101/MyGym-Fitness-Analysis/blob/main/Revenue%20by%20Membership%20Type.PNG"
+</p>
+    
+   The chart shows that Premium memberships are the major source of revenue, followed by Standard. Together, these two account for over 70% of MyGym’s income, highlighting their            central importance, followed by Elite and Basic. The analysis suggests that Premium and Standard plans should remain the strategic focus, while Elite and Basic may require re-           evaluation to increase their impact.
     The dominance of the Premium membership type is consistent even when the data is broken down by gender and subscription models. Both male and female members contribute most              significantly to revenue through the Premium plan, confirming its broad appeal across demographics. This consistency suggests that Premium’s value proposition is universally             attractive, cutting across gender differences, and reinforcing its position as the most important revenue driver for MyGym.
 
 2.	Do pricing models (e.g., monthly vs. early bird annual) affect churn or satisfaction?
     This question is asking whether the type of subscription plan that members choose (e.g., monthly, quarterly, annual, or early-bird promotions) has any measurable impact on whether       members on certain plans are more likely to stop visiting or cancel their membership.
     <p align="center">
-    ![  Mmebership Status](https://github.com/Rikky101/MyGym-Fitness-Analysis/blob/main/Membership%20Status.PNG)
-
-    The analysis showed that there was no significant overall influence of subscription models on churn rate at MyGym. However, when comparing across individual plans, clear differences     emerged. The monthly subscription model recorded the highest churn rate at 63%, suggesting that members on short-term plans are less committed and more likely to discontinue. This       was followed by the early bird annual model and the quarterly model respectively, both of which also experienced notable churn, but to a lesser degree.
+    <img src="https://github.com/Rikky101/MyGym-Fitness-Analysis/blob/main/Membership%20Status.PNG"
+       </p>
+    
+    The analysis showed that there was no significant overall influence of subscription models on churn rate at MyGym. However, when comparing across individual plans, clear                 differences     emerged. The monthly subscription model recorded the highest churn rate at 63%, suggesting that members on short-term plans are less committed and more likely to         discontinue. This       was followed by the early bird annual model and the quarterly model respectively, both of which also experienced notable churn, but to a lesser degree.
     These findings highlight that while subscription type may not drastically shift the overall churn rate, certain models, particularly monthly memberships, are associated with higher      levels of discontinuation. This insight can guide MyGym to strengthen retention efforts for short-term subscribers, perhaps by offering loyalty incentives or encouraging upgrades to     longer-term plans that foster stronger commitment.
 
 3.	Are some locations performing better than others in terms of engagement or profitability?
     This question examines whether different MyGym locations vary in engagement (how actively members use their memberships) and profitability (how much revenue each branch generates).      In other words, it asks which locations are performing best in keeping members active and which are most financially successful.
-    <p align="center">
-    ![GynLocation](https://github.com/Rikky101/MyGym-Fitness-Analysis/blob/main/Revenue%20by%20Gym%20Location.PNG) 
-
-    The most successful location by a significant margin is Fresno. With a robust revenue of $8,983, Fresno is a leader in profitability. Cities like Long Beach ($7,402), San Diego          ($7,395), and Sacramento ($7,359) follow, showing similar costs in the upper tier. Oakland, however, showed the lowest revenue. Regular tracking of cost data by the city will help       identify emerging trends and can be applied to cities with lower revenue.
+ <p align="center">
+    <img src="https://github.com/Rikky101/MyGym-Fitness-Analysis/blob/main/Revenue%20by%20Gym%20Location.PNG" 
+       </p>
+    
+   The most successful location by a significant margin is Fresno. With a robust revenue of $8,983, Fresno is a leader in profitability. Cities like Long Beach ($7,402), San Diego          ($7,395), and Sacramento ($7,359) follow, showing similar costs in the upper tier. Oakland, however, showed the lowest revenue. Regular tracking of cost data by the city will help       identify emerging trends and can be applied to cities with lower revenue.
 
 4.	What effect do discount types (promo, student, loyalty) have on final revenue?
     This question is asking whether the different types of discounts offered by MyGym such as promotional discounts, student discounts, or loyalty rewards, have a measurable impact on       the final revenue earned from memberships.
-     <p align="center">
-     ![Price Analysis](https://github.com/Rikky101/MyGym-Fitness-Analysis/blob/main/Price%20Analysis.PNG) 
-
-     Discounts have a clear effect on revenue. The None category shows that sales without any discounts generated the highest final revenue at $33,013. the Student discount has the most      significant impact, giving the largest total discount ($2,125) and resulting in the lowest final price. In contrast, the Promo discount has the smallest effect, with the lowest          total discount ($673). The Loyalty discount has a moderate impact. 
-     The business could explore whether a slightly smaller student discount would still attract the same number of customers, thereby increasing final revenue. Another option is              exploring ways to shift students toward the more profitable Promo or Loyalty options.
+   <p align="center">
+     <img src="https://github.com/Rikky101/MyGym-Fitness-Analysis/blob/main/Price%20Analysis.PNG" 
+        </p>
+      
+   Discounts have a clear effect on revenue. The None category shows that sales without any discounts generated the highest final revenue at $33,013. the Student discount has the           most significant impact, giving the largest total discount ($2,125) and resulting in the lowest final price. In contrast, the Promo discount has the smallest effect, with the            lowest total discount ($673). The Loyalty discount has a moderate impact. 
+      The business could explore whether a slightly smaller student discount would still attract the same number of customers, thereby increasing final revenue. Another option is              exploring ways to shift students toward the more profitable Promo or Loyalty options.
 
 5.	Do certain access types (off-peak, all hours, priority) impact visit frequency?
     This question is asking whether the type of gym access a member subscribes to — for example, off-peak (limited hours), all-hours (unrestricted access), or priority (premium,             flexible access)- affects how often members visit the gym.
-    <p align="center">
-    ![Weeklyvisits](https://github.com/Rikky101/MyGym-Fitness-Analysis/blob/main/Weekly%20Visits%20by%20Access%20hours.PNG)
-
-    The data shows that the "All hours" access plan is, by far, the most popular, accounting for a remarkable 2,154 weekly visits. This indicates that members value having unrestricted      access to the facility at any time. Following this, the "Weekdays only" plan also demonstrates strong performance with 1,559 weekly visits, highlighting that many members prefer the     convenience of routine, weekday workouts. Plans with more restrictive or exclusive access attract significantly fewer visits. The "Off-peak only" plan records 1,063 visits, showing      that a segment of customers prefers to avoid peak hours. The least popular plan is "All hours + Priority access," which, despite its premium nature, only garners 571 weekly visits.      This suggests that the value of "priority access" does not translate into high usage for most members.
+<p align="center">
+   <img src="https://github.com/Rikky101/MyGym-Fitness-Analysis/blob/main/Weekly%20Visits%20by%20Access%20hours.PNG"
+      </p>
+    
+   The data shows that the "All hours" access plan is, by far, the most popular, accounting for a remarkable 2,154 weekly visits. This indicates that members value having unrestricted      access to the facility at any time. Following this, the "Weekdays only" plan also demonstrates strong performance with 1,559 weekly visits, highlighting that many members prefer the     convenience of routine, weekday workouts. Plans with more restrictive or exclusive access attract significantly fewer visits. The "Off-peak only" plan records 1,063 visits, showing      that a segment of customers prefers to avoid peak hours. The least popular plan is "All hours + Priority access," which, despite its premium nature, only garners 571 weekly visits.      This suggests that the value of "priority access" does not translate into high usage for most members.
     This analysis suggests that the business should focus its marketing and resources on the two most popular plans, "All hours" and "Weekdays only," as they are responsible for the         vast majority of member engagement.
+
 [Interact with the dashboard](https://github.com/Rikky101/MyGym-Fitness-Analysis/blob/main/MyGym%20Fitness%20Analysis.xlsx) 
 
 ## Recommendation:
